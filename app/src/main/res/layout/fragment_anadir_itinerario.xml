@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/fondoanadiritinerario">
+
+    <!-- EditText para Actividad -->
+    <EditText
+        android:id="@+id/edit_actividad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Actividad"
+        android:padding="16dp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/edit_text_background"
+    android:textSize="16sp"
+    android:layout_marginBottom="16dp" />
+
+    <!-- EditText para Ubicación -->
+    <EditText
+        android:id="@+id/edit_ubicacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ubicación"
+        android:padding="16dp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/edit_text_background"
+    android:textSize="16sp"
+    android:layout_marginBottom="32dp" />
+
+    <!-- Botón para guardar el itinerario -->
+    <Button
+        android:id="@+id/btn_guardar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Guardar Itinerario"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_background"
+    android:layout_marginTop="16dp" />
+
+</LinearLayout>

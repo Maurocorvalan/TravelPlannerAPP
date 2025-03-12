@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/gasto_orange"
+    android:padding="16dp">
+
+    <!-- Spinner de categorías -->
+<Spinner
+android:id="@+id/spinner_categorias"
+android:layout_width="match_parent"
+android:layout_height="70dp"
+android:background="@drawable/spinner_background"
+    android:popupBackground="@android:color/white"
+    android:padding="16dp"
+    android:textSize="16sp"
+    android:layout_marginBottom="16dp" />
+
+<EditText
+android:id="@+id/edit_monto"
+android:layout_width="match_parent"
+android:layout_height="70dp"
+android:hint="Monto"
+android:inputType="numberDecimal"
+android:padding="16dp"
+android:textColor="@android:color/black"
+android:background="@drawable/edit_text_background"
+    android:textSize="16sp"
+    android:layout_marginBottom="16dp" />
+
+<EditText
+android:id="@+id/edit_descripcion"
+android:layout_width="match_parent"
+android:layout_height="70dp"
+android:hint="Descripción"
+android:inputType="text"
+android:padding="16dp"
+android:textColor="@android:color/black"
+android:background="@drawable/edit_text_background"
+    android:textSize="16sp"
+    android:layout_marginBottom="16dp" />
+
+<Button
+android:id="@+id/btn_guardar"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Guardar"
+android:textColor="@android:color/white"
+android:textSize="16sp"
+android:background="@drawable/button_background"
+    android:layout_marginTop="16dp" />
+
+    </LinearLayout>

@@ -1,0 +1,8 @@
+<!-- res/drawable/divider_with_padding.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF" /> <!-- Color del borde -->
+    <size android:height="2dp" /> <!-- Grosor de la línea -->
+    <padding
+        android:left="16dp"
+        android:right="16dp" /> <!-- Padding a la izquierda y derecha -->
+</shape>

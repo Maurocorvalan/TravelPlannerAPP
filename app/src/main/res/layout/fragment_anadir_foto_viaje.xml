@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:background="#F4F4F9">
+
+    <!-- Imagen vista previa -->
+    <ImageView
+        android:id="@+id/image_foto"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:contentDescription="Vista previa de la foto"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerCrop"
+    android:layout_marginBottom="16dp"/>
+
+
+
+    <Button
+        android:id="@+id/btn_seleccionar_imagen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FF793D"
+        android:gravity="start"
+        android:padding="12dp"
+        android:text="Seleccionar Imagen"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/edit_descripcion_foto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Escribe una descripción"
+        android:background="@drawable/edit_text_background"
+        android:textColor="#333333"
+    android:textColorHint="#B0B0B0"
+    android:layout_marginTop="20dp"
+    android:padding="12dp"
+    android:inputType="text" />
+
+    <!-- Botón para subir la foto -->
+    <Button
+        android:id="@+id/btn_subir_foto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subir Foto"
+        android:textColor="#FFFFFF"
+    android:backgroundTint="#95B877"
+    android:layout_marginTop="20dp"
+    android:padding="12dp"
+/>
+
+</LinearLayout>

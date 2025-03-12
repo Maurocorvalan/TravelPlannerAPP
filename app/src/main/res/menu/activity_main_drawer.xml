@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/logotravel"
+            android:title="Viajes" />
+
+        <item
+            android:id="@+id/nav_Itinerario"
+            android:icon="@drawable/itinerarios_logo"
+            android:title="Itinerarios" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/gastos_logo"
+            android:title="Gastos" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/gallery_2613771"
+            android:title="Galeria" />
+        <item
+            android:id="@+id/nav_perfil"
+            android:icon="@drawable/icons8_usuario_50"
+            android:title="Mi perfil" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/cerrar_sesion"
+            android:title="Salir" />
+
+    </group>
+</menu>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.AgregarViajeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/et_nombre_viaje"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:hint="Nombre del viaje"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_descripcion_viaje"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+
+            android:hint="Descripción"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/et_fecha_inicio"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:hint="Fecha de inicio"
+            android:inputType="date"/>
+
+        <EditText
+            android:id="@+id/et_fecha_fin"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:hint="Fecha de fin "
+            android:inputType="date"/>
+
+        <Button
+            android:id="@+id/btn_guardar_viaje"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/teal_700"
+            android:textSize="20sp"
+
+            android:text="Guardar viaje"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.aplicaciondeviajes.ui.home.HomeFragment"
+        android:label="Viajes"
+        tools:layout="@layout/fragment_home" >
+
+
+        <action
+            android:id="@+id/action_nav_home_to_editarViajeFragment"
+            app:destination="@id/editarViajeFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_agregarViajeFragment"
+            app:destination="@id/agregarViajeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/agregarViajeFragment"
+        android:name="com.example.aplicaciondeviajes.ui.home.AgregarViajeFragment"
+        android:label="Agregar Viaje"
+        tools:layout="@layout/fragment_agregar_viaje" />
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.aplicaciondeviajes.ui.gallery.GalleryFragment"
+        android:label="Galeria"
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_nav_gallery_to_verFotosViajeFragment"
+            app:destination="@id/verFotosViajeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/verFotosViajeFragment"
+        android:name="com.example.aplicaciondeviajes.ui.gallery.VerFotosViajeFragment"
+        android:label="Galeria de fotos"
+         >
+        <action
+            android:id="@+id/action_verFotosViajeFragment_to_anadirFotosFragment"
+            app:destination="@id/anadirFotosFragment" />
+        <action
+            android:id="@+id/action_verFotosViajeFragment_to_nav_gallery"
+            app:destination="@id/nav_gallery" />
+    </fragment>
+    <fragment
+        android:id="@+id/anadirFotosFragment"
+        android:name="com.example.aplicaciondeviajes.ui.gallery.AnadirFotoViajeFragment"
+        android:label="Galeria de fotos"
+        >
+        <action
+            android:id="@+id/action_anadirFotosFragment_to_verFotosViajeFragment"
+            app:destination="@id/verFotosViajeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_Itinerario"
+        android:name="com.example.aplicaciondeviajes.ui.Itinerario.ItinerarioFragment"
+        android:label="Itinerario"
+        >
+        <action
+            android:id="@+id/action_nav_Itinerario_to_verItinerario"
+            app:destination="@id/verItinerario" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/verItinerario"
+        android:name="com.example.aplicaciondeviajes.ui.Itinerario.VerItinerariosFragment"
+        android:label="Itinerario"
+        >
+        <action
+            android:id="@+id/action_verItinerario_to_editarItinerario"
+            app:destination="@id/editarItinerario" />
+        <action
+            android:id="@+id/action_verItinerario_to_nav_Itinerario"
+            app:destination="@id/nav_Itinerario" />
+        <action
+            android:id="@+id/action_verItinerario_to_anadirItinerario"
+            app:destination="@id/anadirItinerario" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/anadirItinerario"
+        android:name="com.example.aplicaciondeviajes.ui.Itinerario.AnadirItinerarioFragment"
+        android:label="Añadir Itinerario"
+        >
+        <action
+            android:id="@+id/action_anadirItinerario_to_verItinerario"
+            app:destination="@id/verItinerario" />
+    </fragment>
+    <fragment
+        android:id="@+id/editarItinerario"
+        android:name="com.example.aplicaciondeviajes.ui.Itinerario.EditarItinerarioFragment"
+        android:label="Editar Itinerario"
+        >
+        <action
+            android:id="@+id/action_editarItinerario_to_verItinerario"
+            app:destination="@id/verItinerario" />
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.aplicaciondeviajes.ui.slideshow.SlideshowFragment"
+        android:label="Gastos"
+        tools:layout="@layout/fragment_slideshow" >
+        <action
+            android:id="@+id/action_nav_slideshow_to_gastos"
+            app:destination="@id/gastos" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/gastos"
+        android:name="com.example.aplicaciondeviajes.ui.slideshow.GastoFragment"
+        android:label="Gastos"
+>
+        <action
+            android:id="@+id/action_gastos_to_nav_slideshow"
+            app:destination="@id/nav_slideshow" />
+        <action
+            android:id="@+id/action_gastos_to_editarGastoFragment"
+            app:destination="@id/editarGastoFragment" />
+        <action
+            android:id="@+id/action_gastos_to_AnadirGasto"
+            app:destination="@id/AnadirGasto" />
+    </fragment>
+    <fragment
+        android:id="@+id/AnadirGasto"
+        android:name="com.example.aplicaciondeviajes.ui.slideshow.AnadirGastoFragment"
+        android:label="Añadir gasto"
+  >
+        <action
+            android:id="@+id/action_AnadirGasto_to_gastos"
+            app:destination="@id/gastos" />
+    </fragment>
+    <fragment
+        android:id="@+id/editarGastoFragment"
+        android:name="com.example.aplicaciondeviajes.ui.slideshow.EditarGastoFragment"
+        android:label="Editar Gasto"
+        >
+        <action
+            android:id="@+id/action_editarGastoFragment_to_gastos"
+            app:destination="@id/gastos" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editarViajeFragment"
+        android:name="com.example.aplicaciondeviajes.ui.home.EditarViajeFragment"
+        android:label="Editar Viaje"
+         >
+        <action
+            android:id="@+id/action_nav_editar_viaje_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.example.aplicaciondeviajes.ui.Logout.LogOutFragment"
+        android:label="Salir"
+        tools:layout="@layout/fragment_log_out" />
+    <fragment
+        android:id="@+id/nav_perfil"
+        android:name="com.example.aplicaciondeviajes.ui.perfil.PerfilFragment"
+        android:label="Mi perfil"
+ />
+    <fragment
+        android:id="@+id/nav_registro"
+        android:name="com.example.aplicaciondeviajes.ui.RegistroUsuario.RegistroUsuarioFragment"
+        android:label="Registrarme"
+        />
+
+
+</navigation>

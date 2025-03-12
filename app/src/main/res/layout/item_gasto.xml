@@ -1,0 +1,79 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="6dp"
+
+    android:radius="12dp"
+    android:layout_marginBottom="12dp">
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:padding="16dp"
+android:background="@drawable/card_background"
+    android:layout_margin="8dp">
+
+<TextView
+android:id="@+id/text_categoria"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Categoría"
+android:textSize="18sp"
+android:textStyle="bold"
+android:textColor="@android:color/black"
+android:layout_marginBottom="4dp" />
+
+<TextView
+android:id="@+id/text_monto"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Monto: $0.00"
+android:textSize="16sp"
+android:textColor="@android:color/holo_red_dark"
+android:layout_marginTop="4dp"
+android:layout_marginBottom="4dp"/>
+
+<TextView
+android:id="@+id/text_descripcion"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Descripción del gasto"
+android:textSize="14sp"
+android:textColor="@android:color/darker_gray"
+android:layout_marginTop="4dp"
+android:layout_marginBottom="8dp"/>
+
+    <!-- Botones de Editar y Eliminar -->
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:layout_marginTop="8dp"
+android:gravity="end">
+
+<Button
+    android:id="@+id/btn_editar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Editar"
+    android:textColor="@android:color/white"
+    android:backgroundTint="@android:color/holo_blue_dark"
+    android:layout_marginEnd="8dp"
+    android:padding="10dp"
+    android:layout_gravity="center_vertical"/>
+
+<Button
+    android:id="@+id/btn_eliminar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Eliminar"
+    android:textColor="@android:color/white"
+    android:backgroundTint="@android:color/holo_red_dark"
+    android:padding="10dp"
+    android:layout_gravity="center_vertical"/>
+</LinearLayout>
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
