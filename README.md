@@ -32,21 +32,18 @@ Esta app está diseñada para integrarse con la API de [TravelPlannerAPI](https:
 
 ### **💰 Registro de Gastos**  
 - Agregar y clasificar gastos durante el viaje.  
-- Visualización del presupuesto disponible y estadísticas de gasto.  
-- Exportación de reportes en formato PDF/CSV.  
+- Estadísticas de gasto.  
 - Integración con la API para mantener el registro actualizado en la nube.
 
 ### **📸 Documentación Fotográfica**  
 - Captura y almacenamiento de fotos del viaje.  
-- Organización por fechas y categorías.  
-- Sincronización en la nube para respaldo utilizando la API.
 
 ---
 
 ## 🚀 Tecnologías Utilizadas  
 
 ### **Frontend (Aplicación Móvil)**  
-- **Lenguaje:** Java  
+- **Lenguaje:** Java, RetroFit
 - **Framework:** Android SDK  
 - **UI/Animaciones:** MotionLayout, Lottie, Maskable Layout, BlurView  
 
@@ -63,15 +60,6 @@ Esta app está diseñada para integrarse con la API de [TravelPlannerAPI](https:
 - **Pruebas:** Emulador de Android o dispositivo físico  
 - **API Backend:** [TravelPlannerAPI](https://github.com/Maurocorvalan/TravelPlannerAPI)  
 
----
-
-## 📦 Instalación y Configuración  
-
-1. Clonar el repositorio desde GitHub:  
-2. Abrir el proyecto en **Android Studio**.  
-3. Instalar las dependencias necesarias desde **Gradle**.  
-4. Configurar Firebase (si se usa en el backend).  
-5. Ejecutar la app en un emulador o dispositivo físico.  
 
 
 
